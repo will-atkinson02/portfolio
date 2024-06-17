@@ -1,50 +1,63 @@
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 20% 10% 10% 10%;
     padding: 10px;
-    background-color: blue;
+    background-color: #0d499c;
     color: white;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     font-family: "PT Sans Narrow", sans-serif;
+    padding-left: 40px;
 }
 
 .anchor-1 {
-    text-align: center;
+    padding: 8px 0;
     margin: auto 0;
     color: white;
     font-family: "PT Sans Narrow", sans-serif;
+    font-size: x-large;
+    text-decoration-line: none;
+    border-left: 1px solid white;
+    
 }
 
+.anchor-1:hover {
+    background-color: #457dca;
 
-.main-container {
-    width: 66.66%;
+}
+
+#contact-border {
+    border-right: 1px solid white;
+}
+
+.section-1 {
     margin: 0 auto;
     font-family: "PT Sans Narrow", sans-serif;
 }
 
 .about-me-panel {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: xx-large;
     position: relative;
-    grid-template-columns: 1fr 1fr;
-
 }
 
 .about-details {
-    position: absolute;
-    width: 25%;
-    padding: 25px;
+    padding: 15px;
     background-color: white;
     border-bottom-right-radius: 25px;
     border: 2px solid white;
 }
 
 .about-img {
-  width: 100%;
-    
+    width: 100%;
+    position: absolute;
 }
+
+.section-2
 
 .projects {
     display: grid;
@@ -56,4 +69,6 @@ h1 {
 
 .contact {
     border-top: 2px solid #000000;
+    background-color: #082c5f;
+    color: white;
 }
