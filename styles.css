@@ -1,23 +1,59 @@
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+
 h1 {
     text-align: center;
+    font-family: "PT Sans Narrow", sans-serif;
 }
+
+.anchor-1 {
+    text-align: center;
+    margin: auto 0;
+    color: white;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
 
 .main-container {
     width: 66.66%;
     margin: 0 auto;
+    font-family: "PT Sans Narrow", sans-serif;
 }
 
-.about-me-grid {
-    display: grid;
+.about-me-panel {
+    position: relative;
     grid-template-columns: 1fr 1fr;
-    border: 2px solid #000000;
+
 }
 
 .about-details {
+    position: absolute;
+    width: 25%;
     padding: 25px;
+    background-color: white;
+    border-bottom-right-radius: 25px;
+    border: 2px solid white;
 }
 
 .about-img {
   width: 100%;
     
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #000000;
+    padding: 25px;
+    margin: 15px 0 15px 0;
+}
+
+.contact {
+    border-top: 2px solid #000000;
 }
