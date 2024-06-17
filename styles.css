@@ -1,4 +1,23 @@
+h1 {
+    text-align: center;
+}
+
 .main-container {
     width: 66.66%;
     margin: 0 auto;
+}
+
+.about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #000000;
+}
+
+.about-details {
+    padding: 25px;
+}
+
+.about-img {
+  width: 100%;
+    
 }
