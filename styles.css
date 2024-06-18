@@ -1,7 +1,7 @@
 
 header {
     display: grid;
-    grid-template-columns: 20% 10% 10% 10%;
+    grid-template-columns: 27.5% 15% 15% 15%;
     padding: 10px;
     background-color: #0d499c;
     color: white;
@@ -9,9 +9,10 @@ header {
     font-family: "Fira Sans", sans-serif;
 }
 
-.navbar-head {
-    font-family: "Fira Sans", sans-serif;
-    padding-left: 40px;
+#navbar-head {
+    font-family: "Playwrite IS", cursive;
+    padding: 0 10%;
+    font-size: 30px;
 }
 
 .anchor-1 {
@@ -37,7 +38,7 @@ header {
 .section-1 {
     height: 88vh;
     text-align: center;
-    background-color: #0d499c;
+    background-color: white;
     display: flex;
     border-top: 1px solid white;
     font-family: "Fira Sans", sans-serif;
@@ -45,9 +46,31 @@ header {
 
 .welcome {
     margin: 0 auto;
-    font-size: 6vw;
-    color: white;
+    color: #0a3169;
 }
+
+#welcome-h2 {
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 25%;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.click-pls {
+    margin-top: 20%;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.arrow {
+    margin-top: 5%;
+    color: #000000;
+    font-size: 100px;
+}
+
 
 .section-2 {
     height: 100vh;
@@ -133,4 +156,9 @@ header {
 .contact-details {
     width: 40%;
     margin: 0 auto;
+}
+
+.socials {
+    font-size: 100px;
+    
 }
