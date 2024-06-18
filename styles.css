@@ -8,7 +8,7 @@ header {
     text-align: center;
 }
 
-h1 {
+.navbar-head {
     font-family: "PT Sans Narrow", sans-serif;
     padding-left: 40px;
 }
@@ -34,40 +34,88 @@ h1 {
 }
 
 .section-1 {
-    margin: 0 auto;
+    height: 88vh;
+    text-align: center;
+    background-color: #0d499c;
+    display: flex;
+    border-top: 1px solid white;
     font-family: "PT Sans Narrow", sans-serif;
 }
 
+.welcome {
+    margin: 0 auto;
+    font-size: 6vw;
+    color: white;
+}
+
+.section-2 {
+    height: 100vh;
+    margin: 0 auto;
+    font-family: "PT Sans Narrow", sans-serif;
+    background-color: #141512;
+ 
+    
+}
+
 .about-me-panel {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     font-size: xx-large;
-    position: relative;
+    display: grid;
+    grid-template-columns: 35% 65%;
 }
 
 .about-details {
-    padding: 15px;
+    padding: 100px 30px 20px 30px;
     background-color: white;
-    border-bottom-right-radius: 25px;
     border: 2px solid white;
+
 }
 
 .about-img {
-    width: 100%;
-    position: absolute;
+    height: 100vh;
 }
 
-.section-2
+.section-3 {
+    height: 100vh;
+    padding: 30px;
+    background-color: #267bf2;
+    font-family: "PT Sans Narrow", sans-serif;
+}
 
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 2px solid #000000;
+    border: 5px solid #000000;
     padding: 25px;
-    margin: 15px 0 15px 0;
+    width: 66.66%;
+    margin: 0 auto;
+    margin-bottom: 40px ;
+    background-color: #082c5f;
+    color: white;
+    border-radius: 30px;
 }
 
+.project-info {
+    margin-left: 45px;
+    display: grid;
+}
+
+.project-links {
+    align-self: end;
+    color: white;
+}
+
+.placeholder-image {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    justify-self: end;
+    margin-right: 45px;
+    background-color: grey;
+}
+
+
 .contact {
+    height: 100vh;
     border-top: 2px solid #000000;
     background-color: #082c5f;
     color: white;
