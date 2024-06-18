@@ -2,24 +2,24 @@
     "projects": [
         {
             "name": "Project 1",
-            "img" : "https://placeholder.pics/svg/300",
+            "img" : "https://placeholder.pics/svg/300x200",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at dolor tortor. Suspendisse non orci felis. Fusce non commodo dui. Donec eu enim vel leo sagittis volutpat quis nec lacus.",
             "github": "https://github.com/",
-            "p-link": ""
+            "plink": "https://google.com"
         },
         {
             "name": "Project 2",
-            "img" : "https://placeholder.pics/svg/300",
+            "img" : "https://placeholder.pics/svg/300x200",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at dolor tortor. Suspendisse non orci felis. Fusce non commodo dui. Donec eu enim vel leo sagittis volutpat quis nec lacus.",
             "github": "https://github.com/",
-            "p-link": ""
+            "plink": "https://google.com"
         },
         {
             "name": "Project 3",
-            "img" : "https://placeholder.pics/svg/300",
+            "img" : "https://placeholder.pics/svg/300x200",
             "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at dolor tortor. Suspendisse non orci felis. Fusce non commodo dui. Donec eu enim vel leo sagittis volutpat quis nec lacus.    ",
             "github": "https://github.com/",
-            "p-link": ""
+            "plink": "https://google.com"
         }
     ]
 }
