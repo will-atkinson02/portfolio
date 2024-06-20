@@ -29,11 +29,32 @@ fetch("projects.json").then(function (res) {
     })
 
     section3.innerHTML += `
-    <div class="arrow-4">
-        <a><i class="fa-solid fa-chevron-down"></i></a>
+    <div class="arrow-3">
+        <a class="arrow-to-contact" href="#footer"><i class="fa-solid fa-chevron-down"></i></a>
     </div>
     `
+
+    // Hide arrow to contact section 
+
+    const clickArrow = document.querySelector('.arrow-to-contact')
+
+    function hideArrow3() {
+        clickArrow.classList.add('hidden')
+    }
+
+    clickArrow.addEventListener('click', hideArrow3)
     
+    // Show arrow on scroll
+
+    const scroll = document.querySelector('.arrow-to-contact')
+    const body = document.querySelector('.section-3')
+
+    function showArrow3() {
+        scroll.classList.remove('hidden')
+    }
+
+    body.addEventListener("scroll", showArrow3)
+
+
 })
 
-// Reduce opacity when

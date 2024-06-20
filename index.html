@@ -32,9 +32,9 @@
     <!--Header: Navbar-->
     <header>
         <h2 id="navbar-head"><span>My Portfolio</span> <i class="fa-solid fa-palette"></i></h2>
-        <a class="anchor-1" href="">About</a>
-        <a class="anchor-1" href="">Projects</a>
-        <a class="anchor-1" id="contact-border" href="">Contact</a>
+        <a class="anchor-1" href="#section-2">About</a>
+        <a class="anchor-1" href="#section-3">Projects</a>
+        <a class="anchor-1" id="contact-border" href="#footer">Contact</a>
     </header>
     
     <!--Section 1: Welcome-->
@@ -42,25 +42,22 @@
         <div class="welcome">
             <h2 id="welcome-h2">Hello!</h2>
             <h1>Welcome to my Portfolio...</h1>
-            <!--<div class="click-or-scroll"> -->
+            <div class="click-or-scroll">
                 <p class="click-pls">Click the arrow below to see more:</p>
-            <!--<p class="scroll-pls">Scroll to see more...</p> -->
-            <!--</div>-->
+                <p class="scroll-pls">Scroll to see more...</p>
+            </div>
             
             <div class="arrow-1">
-                <a><i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#section-2" ><i class="fa-solid fa-chevron-down"></i></a>
             </div>
         </div>
         
     </section>
     
     <!--Section 2: About-->
-    <section class="section-2">
+    <section id="section-2" class="section-2">
         <!-- Background Image-->
         <img id="code-background"src="https://images.pexels.com/photos/1921326/pexels-photo-1921326.jpeg"/>
-        <div class="arrow-2">
-            <a><i class="fa-solid fa-chevron-up"></i></a>
-        </div>
         <div class="about-panel">
             <div class="details">
                 <h2 class="about-title">About me...</h2>
@@ -70,8 +67,8 @@
             <div class="pfp-div">
                  <img class="pfp-size" src="https://cdn.pixabay.com/photo/2016/04/22/04/57/graduation-1345143_1280.png"/>
             </div>
-            <div class="arrow-3">
-                <a><i class="fa-solid fa-chevron-down"></i></a>
+            <div class="arrow-2">
+                <a href="#section-3" ><i class="fa-solid fa-chevron-down"></i></a>
             </div>
         </div>
         
@@ -79,7 +76,7 @@
     </section >
     
     <!--Section 3: Projects-->
-    <section class="section-3">
+    <section id="section-3" class="section-3">
         <div class="portfolio-title">
             <h2>Here are some of the projects I've worked on:</h2>
         </div>
@@ -89,7 +86,7 @@
     </section>
 
     <!--Footer: Contact-->
-    <footer class="contact">
+    <footer id="footer" class="contact">
         <div class="details-container">
             <div class="contact-details">
                 <h3 id="contact-title">How to Contact me:</h3>
@@ -119,7 +116,7 @@
         </div> 
     </footer>
     <div class="div-pad">
-
+        <p>© Copyright 2024</p>
     </div>
 </body>
 </html>
