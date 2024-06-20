@@ -249,9 +249,9 @@ h1 {
     margin: 0 auto;
     background-color: #0d499c;
     color: white;
-    height: 195px;
+    height: auto;
     transition: background-color 1s;
-    max-height: 194px;
+    max-height: none;
 }
 
 .projects-outer:hover {
@@ -302,6 +302,26 @@ h1 {
     border: 2px solid #000000;
 }
 
+
+/**/
+
+.read-more {
+    font-style: italic;
+}
+
+.read-more:hover {
+    cursor: pointer;
+}
+
+/**/
+
+.response-image {
+    display: none;
+
+}
+
+/**/
+
 .arrow-3 {
     margin-top: 13px;
     
@@ -324,6 +344,8 @@ h1 {
 .hidden {
     display: none;
 }
+
+
 
 /* Footer - Contact section */
 
@@ -392,7 +414,7 @@ h1 {
 
 
 @media screen and (max-width: 1383px) {
-    .section-3 h2 {
+    .portfolio-title h2 {
         font-size: 35px;
     }
 
@@ -401,20 +423,15 @@ h1 {
         max-width: none;
     }
 
+    /* Section 3 - Projects */
 
-}
-
-@media screen and (max-width: 1383px) {
-    .section-3 h2 {
-        font-size: 35px;
+    .projects-outer {
+        width: 70%;
     }
 }
-
 
 @media screen and (max-width: 1212px) {
-    .section-3 h2 {
-        font-size: 30px;
-    }
+    
     #navbar-head i {
         display: none;
         align-self: center;
@@ -528,8 +545,212 @@ h1 {
         display: none;
 
     }
+
+    /* Section 3 - Projects */ 
+
+    .projects-outer {
+        display: grid;
+        padding: 25px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #0d499c;
+        color: white;
+        height: auto;
+        transition: background-color 1s;
+        max-height: none;
+    }
     
+    .arrow-3 {
+        display: none;
+    }
 }
+
+
+
+/*-------------------------------------------------------------------
+-------------------------- Max Width 766px --------------------------
+-------------------------------------------------------------------*/
+
+@media screen and (max-width: 766px) {
+    
+    /* Section 3 - Projects */
+
+    .section-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 120vh;
+        background-color: white;
+        font-family: "Fira Sans", sans-serif;
+        gap: 35px;
+    }
+
+    .portfolio-title {
+        width: 60%;
+        margin: 0 auto;
+        padding: 5px;
+        color: #0a3169;
+        border-bottom: 2px solid #0a3169;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .portfolio-title h2 {
+        font-size: 25px;
+        margin: 5px 0;
+        font-weight: 400;
+    }
+
+    .portfolio-title p {
+        margin: 0;
+        margin-bottom: 15px;
+
+    }
+
+    .projects-outer {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 25px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #0d499c;
+        color: white;
+        
+        transition: background-color 1s;
+        
+    }
+
+    .projects-outer:hover {
+        background-color: #000000;
+    }
+
+    .project-container {
+        margin-left: 0px;
+        display: grid;
+
+    }
+
+    .project-container h2 {
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+
+    /**/
+
+    .project-info {
+        border-bottom: 1px solid white;
+        font-weight: 300;
+    }
+
+    .project-info p {
+        font-size: 15px;
+    }
+
+    /**/
+
+    .project-links {
+        margin-top: 20px;
+        align-self: end;
+        font-size: 20px;
+    }
+
+    .project-links a {
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+    }
+
+    .project-links a:hover {
+        color: rgb(17, 218, 178);
+    }
+
+    .image-container {
+        max-width: 300px;
+        justify-self: center;
+        align-self: center;
+
+    }
+
+    .project-image {
+        height: 195px;
+        border: 2px solid #000000;
+        display: none;
+    }
+
+    .arrow-4 {
+        margin-top: 13px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 100px;
+        text-align: center;
+        display: none;
+    }
+
+    /**/
+
+    .response-image-container {
+        padding: 5%;
+    }
+
+    .response-image {
+        display: block;
+        width: 100%;
+        border: 2px solid #0a3169 ;
+    }
+
+    /**/
+
+    /* Footer - Contact section */
+
+    .contact {
+        height: 50vh;
+        border-top: 2px solid #000000;
+        background-color: #082c5f;
+        color: white;
+        font-family: "Fira Sans", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+    }
+
+    .details-container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        height: 40vh;
+    }
+
+    .contact-details {
+        padding: 0 20px;
+    }
+
+    #contact-title {
+        font-size: 20px;
+    }
+
+    .socials a {
+        font-size: 60px;
+        color: #457dca;
+    }
+
+    .socials a:hover {
+        color: azure;
+    }
+}
+
+
+/*-------------------------------------------------------------------
+-------------------------- Max Width 680px --------------------------
+-------------------------------------------------------------------*/
 
 @media screen and (max-width: 680px) {
     header {
@@ -539,6 +760,11 @@ h1 {
         height: 50px;*/
     }
 }
+
+
+/*-------------------------------------------------------------------
+-------------------------- Max Width 500px --------------------------
+-------------------------------------------------------------------*/
 
 /* Works for IPhone SE */
 
@@ -673,157 +899,7 @@ h1 {
 
     /* Section 3 - Projects */
 
-    .section-3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 120vh;
-        background-color: white;
-        font-family: "Fira Sans", sans-serif;
-        gap: 35px;
-    }
+    
 
-    .portfolio-title {
-        width: 60%;
-        margin: 0 auto;
-        padding: 5px;
-        color: #0a3169;
-        border-bottom: 2px solid #0a3169;
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .portfolio-title h2 {
-        font-size: 25px;
-        margin: 5px 0;
-        font-weight: 400;
-    }
-
-    .portfolio-title p {
-        margin: 0;
-        margin-bottom: 15px;
-
-    }
-
-    .projects-outer {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 25px;
-        width: 80%;
-        margin: 0 auto;
-        background-color: #0d499c;
-        color: white;
-        height: 195px;
-        transition: background-color 1s;
-        max-height: 194px;
-    }
-
-    .projects-outer:hover {
-        background-color: #000000;
-    }
-
-    .project-container {
-        margin-left: 10px;
-        display: grid;
-
-    }
-
-    .project-container h2 {
-        font-weight: 400;
-        font-size: 30px;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    /**/
-
-    .project-info {
-        border-bottom: 1px solid white;
-        font-weight: 300;
-    }
-
-    .project-info p {
-        font-size: 15px;
-    }
-
-    /**/
-
-    .project-links {
-        margin-top: 20px;
-        align-self: end;
-        font-size: 20px;
-    }
-
-    .project-links a {
-        color: white;
-        text-decoration: none;
-        margin: 15px;
-    }
-
-    .project-links a:hover {
-        color: rgb(17, 218, 178);
-    }
-
-    .image-container {
-        max-width: 300px;
-        justify-self: center;
-        align-self: center;
-
-    }
-
-    .project-image {
-        height: 195px;
-        border: 2px solid #000000;
-        display: none;
-    }
-
-    .arrow-4 {
-        margin-top: 13px;
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 100px;
-        text-align: center;
-        display: none;
-    }
-    /* Footer - Contact section */
-
-    .contact {
-        height: 50vh;
-        border-top: 2px solid #000000;
-        background-color: #082c5f;
-        color: white;
-        font-family: "Fira Sans", sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-
-    }
-
-    .details-container {
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-left: 1px solid white;
-        border-right: 1px solid white;
-        height: 40vh;
-    }
-
-    .contact-details {
-        padding: 0 20px;
-    }
-
-    #contact-title {
-        font-size: 20px;
-    }
-
-    .socials a {
-        font-size: 60px;
-        color: #457dca;
-    }
-
-    .socials a:hover {
-        color: azure;
-    }
+    
 }
