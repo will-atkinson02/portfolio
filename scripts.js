@@ -37,6 +37,7 @@ fetch("projects.json").then(function (res) {
 
 
     section3.innerHTML += `
+    <!-- Arrow to contact section -->
     <div class="arrow-3">
         <a class="arrow-to-contact" href="#footer" aria-label="Next Section"><i class="fa-solid fa-chevron-down"></i></a>
     </div>
