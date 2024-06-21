@@ -1,11 +1,19 @@
+
+
+:root {
+    --white-color: white;
+    --blue-color1: #0d499c;
+}
+
+
 /* Header - Navbar */
 
 header {
     display: grid;
     grid-template-columns: 27.5% 15% 15% 15%;
     padding: 10px;
-    background-color: #0d499c;
-    color: white;
+    background-color: var(--blue-color1);
+    color: var(--white-color);
     text-align: center;
     font-family: "Fira Sans", sans-serif;
 }
@@ -19,11 +27,11 @@ header {
 .anchor-1 {
     padding: 8px 0;
     margin: auto 0;
-    color: white;
+    color: var(--white-color);
     font-family: "Fira Sans", sans-serif;
     font-size: x-large;
     text-decoration-line: none;
-    border-left: 1px solid white;
+    border-left: 1px solid var(--white-color);
     transition: background-color 0.2s;
 
 }
@@ -34,7 +42,7 @@ header {
 }
 
 #contact-border {
-    border-right: 1px solid white;
+    border-right: 1px solid var(--white-color);
 }
 
 /* Section 1 - Welcome */
@@ -42,10 +50,10 @@ header {
 .section-1 {
     height: 90vh;
     text-align: center;
-    background-color: white;
+    background-color: var(--white-color);
     display: flex;
     justify-content: center;
-    border-top: 1px solid white; 
+    border-top: 1px solid var(--white-color); 
     font-family: "Fira Sans", sans-serif;
     z-index: 1;
 }
@@ -87,8 +95,7 @@ h1 {
     margin: 0;
 }
 
-.click-pls,
-.scroll-pls {
+.click-pls, .scroll-pls {
     grid-column: 1;
     grid-row: 1;
 }
@@ -149,7 +156,7 @@ h1 {
 }
 
 .about-panel:hover {
-    background-color: white;
+    background-color: var(--white-color);
     transition: background-color 0.5s;
 }
 
@@ -201,7 +208,7 @@ h1 {
 }
 
 .arrow-2 a:hover {
-    color: white;
+    color: var(--white-color);
 }
 
 
@@ -212,7 +219,7 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     min-height: 120vh;
-    background-color: white;
+    background-color: var(--white-color);
     font-family: "Fira Sans", sans-serif;
     gap: 35px;
 
@@ -247,8 +254,8 @@ h1 {
     padding: 25px;
     width: 60%;
     margin: 0 auto;
-    background-color: #0d499c;
-    color: white;
+    background-color: var(--blue-color1);
+    color: var(--white-color);
     height: auto;
     transition: background-color 1s;
     max-height: none;
@@ -270,7 +277,7 @@ h1 {
 }
 
 .project-info {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--white-color);
     font-weight: 300;
 }
 
@@ -281,7 +288,7 @@ h1 {
 }
 
 .project-links a {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
     margin: 15px;
 }
@@ -353,7 +360,7 @@ h1 {
     height: 50vh;
     border-top: 2px solid #000000;
     background-color: #082c5f;
-    color: white;
+    color: var(--white-color);
     font-family: "Fira Sans", sans-serif;
     display: flex;
     justify-content: center;
@@ -366,8 +373,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid var(--white-color);
+    border-right: 1px solid var(--white-color);
 }
 
 /*.contact-details {
@@ -393,7 +400,7 @@ h1 {
 
 .div-pad {
     height: 10vh;
-    background-color: white;
+    background-color: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -553,7 +560,7 @@ h1 {
         padding: 25px;
         width: 80%;
         margin: 0 auto;
-        background-color: #0d499c;
+        background-color: var(--blue-color1);
         color: white;
         height: auto;
         transition: background-color 1s;
@@ -614,9 +621,8 @@ h1 {
         padding: 25px;
         width: 80%;
         margin: 0 auto;
-        background-color: #0d499c;
+        background-color: var(--blue-color1);
         color: white;
-        
         transition: background-color 1s;
         
     }

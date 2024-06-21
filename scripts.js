@@ -13,10 +13,10 @@ fetch("projects.json").then(function (res) {
                 <div class="project-info">
                     <h2>${project.name}</h2>
                     <div class="response-image-container">
-                        <img class="response-image" src="${project.img}"/>
+                        <img class="response-image" src="${project.img}" alt=""/>
                     </div>
                     <div class="read-more-container">
-                        <p style="cursor: pointer;" class="read-more">Read more <i class="fa-solid fa-chevron-down"></i></p>
+                        <p style="cursor: pointer;" onmouseover="this.style.color='rgb(17, 218, 178)';" onmouseout="this.style.color='';" class="read-more">Read more <i class="fa-solid fa-chevron-down"></i></p>
                         <p class="project-desc hidden">${project.desc}</p>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ fetch("projects.json").then(function (res) {
             <div>
             </div>
             <div class="image-container">
-                <img class="project-image" src="${project.img}"/>
+                <img class="project-image" src="${project.img}" alt=""/>
             </div>
         </div>
         `
@@ -38,9 +38,11 @@ fetch("projects.json").then(function (res) {
 
     section3.innerHTML += `
     <div class="arrow-3">
-        <a class="arrow-to-contact" href="#footer"><i class="fa-solid fa-chevron-down"></i></a>
+        <a class="arrow-to-contact" href="#footer" aria-label="Next Section"><i class="fa-solid fa-chevron-down"></i></a>
     </div>
     `
+
+    
 
     // Hide arrow to contact section 
 
@@ -50,6 +52,7 @@ fetch("projects.json").then(function (res) {
 
     function hideArrow3() {
         clickArrow.classList.add('hidden')
+        
     }
 
     clickArrow.addEventListener('click', hideArrow3)
@@ -60,24 +63,36 @@ fetch("projects.json").then(function (res) {
 
     function hideArrow3() {
         clickArrow.classList.add('hidden')
+        
     }
     contactBtn.addEventListener('click', hideArrow3)
 
     // Show arrow on scroll
 
-    const scroll = document.querySelector('.arrow-to-contact')
-    const body = document.querySelector('.section-3')
+    //const scroll = document.querySelector('.arrow-to-contact')
+    //const body = document.querySelector('.section-3')
 
-    function showArrow3() {
-        scroll.classList.remove('hidden')
-    }
+    //let hiddenCheck = clickArrow.classList.contains('hidden')
+    
+    let counter = 0
 
-    body.addEventListener("scroll", showArrow3)
+    window.addEventListener("scroll", function () {
+        console.log(counter)
+        counter += 1
+        if (counter >= 50) {
+            clickArrow.classList.remove('hidden')
+            counter = 0
+        }
+            
+    })
+    
 
-
-    const readMores = document.querySelectorAll('.read-more')
+    
 
     // Read more onclick
+    
+    const readMores = document.querySelectorAll('.read-more')
+    
     readMores.forEach(function (readMore) {
         readMore.addEventListener('click', function () {
             const container = readMore.closest('.read-more-container')
@@ -98,4 +113,5 @@ fetch("projects.json").then(function (res) {
 
     
 })
+
 
