@@ -3,137 +3,213 @@
 :root {
     --white-color: white;
     --blue-color1: #0d499c;
+    --blue-colour2: #0a3169;
 }
 
+/* CSS Structure */
 
-/* Header - Navbar */
+/* Positioning */
+    
+/* Display & Box Model */
+
+/* Color */
+
+/* Text */
+
+
+/* Navbar */
 
 header {
+    /* Positioning */
+    height: 10vh;
+    
+    /* Display & Box Model */
     display: grid;
     grid-template-columns: 27.5% 15% 15% 15%;
-    padding: 10px;
+    align-items: center;
+
+    /* Color */
     background-color: var(--blue-color1);
     color: var(--white-color);
-    text-align: center;
+
+
+    /* Text */
     font-family: "Fira Sans", sans-serif;
+    text-align: center;
+
 }
 
-#navbar-head {
+ #navbar-head {
+    /* Positioning */
+    
+    /* Display & Box Model */
+    margin: 0;
+
+    /* Color */
+
+    /* Text */
     font-family: "Playwrite IS", cursive;
-    padding: 0 10%;
-    font-size: 30px;
+
 }
 
 .anchor-1 {
+    /* Positioning */
+    
+    /* Display & Box Model */
     padding: 8px 0;
     margin: auto 0;
-    color: var(--white-color);
-    font-family: "Fira Sans", sans-serif;
-    font-size: x-large;
-    text-decoration-line: none;
     border-left: 1px solid var(--white-color);
+
+    /* Color */
+    color: var(--white-color);
+
+    /* Text */
+    font-size: x-large;
+    font-family: "Fira Sans", sans-serif;
+    text-decoration-line: none;
+
+    /* Transitions */
     transition: background-color 0.2s;
 
 }
 
 .anchor-1:hover {
+    /* Color */
     background-color: #457dca;
 
 }
 
 #contact-border {
+    /* Display & Box Model */
     border-right: 1px solid var(--white-color);
-}
+} 
 
 /* Section 1 - Welcome */
 
 .section-1 {
+    /* Positioning */
     height: 90vh;
-    text-align: center;
-    background-color: var(--white-color);
+
+    /* Display & Box Model */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border-top: 1px solid var(--white-color); 
-    font-family: "Fira Sans", sans-serif;
-    z-index: 1;
-}
 
-.welcome {
-    color: #0a3169;
+    /* Color */
+    background-color: var(--white-color);
+    color: var(--blue-colour2);
+
+    /* Text */
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    
 }
 
 #welcome-h2 {
-    font-size: 50px;
+    /* Display & Box Model */
     margin-bottom: 0px;
-    margin-top: 25%;
-}
+    margin-top: 10vh;
+
+    /* Text */
+    font-size: 50px;
+    
+} 
 
 h1 {
+    /* Text */
     font-size: 80px;
+
 }
 
 .click-pls {
-    /* margin-top: 20%; */
     font-weight: 300;
     font-style: italic;
 }
 
 
 .scroll-pls {
+    /* Display & Box Model */
     display: none;
-    text-align: center;
     align-self: center;
+
+    /* Text */
+    text-align: center;
+    
 }
 
 .click-or-scroll {
-    text-align: center;
-    margin-top: 20%;
+    /* Positioning */
     display: grid;
+
+    /* Text */
+    text-align: center;
+        
 }
 
 .click-or-scroll p {
+    /* Positioning */
     margin: 0;
 }
 
 .click-pls, .scroll-pls {
+    /* Display & Box Model */
     grid-column: 1;
     grid-row: 1;
 }
 
 
 .arrow-1 {
-    margin-top: 5%;
-    
+    /* Display & Box Model */
+    padding-top: 10vh;
+
+    /* Text */
     font-size: 100px;
 }
 
 .arrow-1 a {
+    /* Color */
     color: rgba(0, 0, 0, 0.5);
 }
 
 .arrow-1 i {
+    /* Transition */
     transition: color 0.5s;
 }
 
 .arrow-1 i:hover {
+    /* Color */
     color: #000000;
-}
+} 
 
 /* Section 2 - About */
 
 .section-2 {
-    height: 102vh;
-    display: flex;
-    font-family: "Jost", sans-serif;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
+    /* Positioning */
     position: relative;
+    z-index: 0;
+
+    /* Display & Box Model */
+    display: flex;
+    height: 102vh;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    /* flex-direction: column; */
+    
+    /* Text */
+    font-family: "Jost", sans-serif;
+
 }
 
 #code-background {
+
+    /* Positioning */
+        
+    /* Display & Box Model */
+
+    /* Color */
+
+    /* Text */
     max-width: 110vw;
     position: absolute;
     z-index: 1;
@@ -141,6 +217,15 @@ h1 {
 }
 
 .about-panel {
+
+    /* Positioning */
+        
+    /* Display & Box Model */
+
+    /* Color */
+
+    /* Text */
+
     width: 60%;
     padding: 40px;
     height: 35vh;
@@ -156,19 +241,42 @@ h1 {
 }
 
 .about-panel:hover {
+    /* Positioning */
+        
+    /* Display & Box Model */
+
+    /* Color */
+
+    /* Text */
+
     background-color: var(--white-color);
     transition: background-color 0.5s;
 }
 
 
 .details {
+
+    /* Positioning */
+        
+    /* Display & Box Model */
+
+    /* Color */
+
+    /* Text */
     padding-left: 30px;
     color: #082c5f;
-    font-size: 30px;
+    font-size: 25px;
     opacity: 1;
 }
 
 .about-title {
+        /* Positioning */
+        
+    /* Display & Box Model */
+
+    /* Color */
+
+    /* Text */
     font-size: 2em;
     margin-bottom: 2px;
     margin-top: 25px;
@@ -176,24 +284,27 @@ h1 {
 }
 
 .about-para {
+        /* Positioning */
+        
+    /* Display & Box Model */
+
+    /* Color */
+
+    /* Text */
     margin-top: 15px;
     margin-bottom: 45px;
 
 }
 
-.pfp-div {
-    display: flex;
-    justify-content: center;
-
-
-}
-
-.pfp-size {
-    max-width: 75%;
-    width: 75%;
-}
 
 .arrow-2 {
+        /* Positioning */
+        
+    /* Display & Box Model */
+
+    /* Color */
+
+    /* Text */
     margin-bottom: 60px;
     font-size: 100px;
     z-index: 2;
@@ -204,10 +315,12 @@ h1 {
 }
 
 .arrow-2 a {
+    /* Color */
     color: rgba(255, 255, 255, 0.5);
 }
 
 .arrow-2 a:hover {
+    /* Color */
     color: var(--white-color);
 }
 
@@ -430,8 +543,8 @@ h1 {
     }
 
     #code-background {
-        max-height: 100vh;
-        max-width: none;
+        /* min-height: 100vh; */
+        /* max-width: none; */
     }
 
     /* Section 3 - Projects */
@@ -465,7 +578,7 @@ h1 {
 }
 
 /*-------------------------------------------------------------------
-------------------------- Max Width 1041px --------------------------
+-------------------------???????????? Max Width 1041px --------------------------
 -------------------------------------------------------------------*/
 
 @media screen and (max-width: 1041px) {
@@ -487,12 +600,17 @@ h1 {
 
     header {
         grid-template-columns: 3fr 2fr 2fr 2fr;
-       /* padding: 5px 0;
-        font-size: 15px;
-        height: 50px;*/
     }
 
     /* Section 1 - Welcome */
+
+    h1 {
+        font-size: 60px;
+    }
+
+    #welcome-h2 {
+        margin-top: 0px;
+    }
 
     .click-pls {
         margin-top: 0;
@@ -512,10 +630,15 @@ h1 {
     }
 
     .click-or-scroll {
-        margin-top: 25%;
+        /* margin-top: 25%; */
     }
 
     /* Section 2 - About */
+
+    #code-background {
+        max-height: 120vh;
+        max-width: none;
+    }
 
     .about-panel {
         width: 100%;
@@ -766,19 +889,6 @@ h1 {
 }
 
 
-/*-------------------------------------------------------------------
--------------------------- Max Width 680px --------------------------
--------------------------------------------------------------------*/
-
-@media screen and (max-width: 680px) {
-    header {
-        grid-template-columns: 3fr 2fr 2fr 2fr;
-       /* padding: 5px 0;
-        font-size: 15px;
-        height: 50px;*/
-    }
-}
-
 
 /*-------------------------------------------------------------------
 -------------------------- Max Width 500px --------------------------
@@ -808,8 +918,8 @@ h1 {
     }
 
     .anchor-1 {
+        /* Text */
         font-size: 20px;
-
 
     }
 
@@ -831,18 +941,34 @@ h1 {
     /* Section 1 */
 
     .section-1 {
-        height: 93vh;
+        /* Display & Box Model */
+        justify-content: flex-start;
+        
     }
 
-
     #welcome-h2 {
+        /* Positioning */
+    
+        /* Display & Box Model */
+        padding-top: 15vh;
+
+        /* Color */
+
+        /* Text */
         font-size: 40px;
-        margin-bottom: 65px;
-        margin-top: 20%;
     }
 
     h1 {
-        font-size: 60px
+        /* Display & Box Model */
+        padding-top: 10vh;
+
+        /* Text */
+        font-size: 40px
+    }
+
+    .click-or-scroll {
+        /* Display & Box Model */
+        padding-top: 10vh;
     }
 
     .click-pls {
@@ -862,9 +988,6 @@ h1 {
         display: none;
     }
 
-    .click-or-scroll {
-        margin-top: 25%;
-    }
 
     /* Section 2 - About */
     .about-panel {
