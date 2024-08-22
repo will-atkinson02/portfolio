@@ -783,9 +783,6 @@ h1 {
         display: none;
     }
 
-    .click-or-scroll {
-        /* margin-top: 25%; */
-    }
 
     /* Section 2 - About */
 
@@ -844,6 +841,10 @@ h1 {
 
     /* Section 3 - Projects */ 
 
+    .section-3 {
+        padding-bottom: 30px;
+    }
+
     .projects-outer {
         display: grid;
         padding: 25px;
@@ -876,7 +877,7 @@ h1 {
         flex-direction: column;
         justify-content: flex-start;
         min-height: 120vh;
-        background-color: white;
+        background-color: var(--white-backgroundcolor);
         font-family: "Fira Sans", sans-serif;
         gap: 35px;
     }
@@ -885,8 +886,8 @@ h1 {
         width: 60%;
         margin: 0 auto;
         padding: 5px;
-        color: #0a3169;
-        border-bottom: 2px solid #0a3169;
+        color: var(--blue-color5);
+        border-bottom: 2px solid var(--blue-color6);
         display: flex;
         align-items: center;
         margin-top: 20px;
@@ -1003,14 +1004,13 @@ h1 {
 
     .contact {
         height: 50vh;
-        border-top: 2px solid #000000;
-        background-color: #082c5f;
+        background-color: var(--blue-color6);
         color: white;
         font-family: "Fira Sans", sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
+        
 
     }
 
@@ -1034,12 +1034,8 @@ h1 {
 
     .socials a {
         font-size: 60px;
-        color: #457dca;
     }
 
-    .socials a:hover {
-        color: azure;
-    }
 }
 
 
