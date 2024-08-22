@@ -5,7 +5,6 @@ fetch("projects.json").then(function (res) {
 }).then(function (data){
     const section3 = document.querySelector(".section-3")
 
-
     data.projects.forEach(function (project) {
         section3.innerHTML += `
         <div class="projects-outer">
@@ -24,7 +23,6 @@ fetch("projects.json").then(function (res) {
                     <a href="${project.plink}">Live <i class="fa-solid fa-link"></i></a>
                     <a href="${project.github}"> Github <i class="fa-brands fa-square-github"></i></a>
                 </div>
-                
             </div>
             <div>
             </div>
@@ -78,7 +76,6 @@ fetch("projects.json").then(function (res) {
     let counter = 0
 
     window.addEventListener("scroll", function () {
-        console.log(counter)
         counter += 1
         if (counter >= 50) {
             clickArrow.classList.remove('hidden')
@@ -115,4 +112,33 @@ fetch("projects.json").then(function (res) {
     
 })
 
+const toggleThemeButton = document.getElementById('toggleThemeButton')
 
+toggleThemeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark')
+
+    // Header
+    document.querySelector('header').classList.toggle('dark')
+    document.querySelector('h2').classList.toggle('dark')
+    document.querySelectorAll('.anchor-1').forEach(el=>el.classList.toggle('dark'))
+    document.querySelector('.change-theme').classList.toggle('dark')
+    // document.querySelector('#contact-border').classList.toggle('dark')
+
+
+    // Section 1
+    document.querySelector('.section-1').classList.toggle('dark')
+    document.querySelector('#welcome-h2').classList.toggle('dark')
+    document.querySelector('h1').classList.toggle('dark')
+
+    // Section 2
+    document.querySelector('.about-panel').classList.toggle('dark')
+
+    // Section 3
+    document.querySelector('.section-3').classList.toggle('dark')
+
+    // Footer
+    document.querySelector('footer').classList.toggle('dark')
+    document.querySelector('.div-pad').classList.toggle('dark')
+    document.querySelector('.div-pad p').classList.toggle('dark')
+    document.querySelector('.click-or-scroll').classList.toggle('dark')
+})

@@ -13,6 +13,13 @@
             "desc": "We built the front-end for an invoice web app, using React. It fetched data from an RESTful API and displayed clients and their invoices along with their payment status. I worked on the new invoice page which required sending POST requests to the API.",
             "github": "https://github.com/iO-Academy/2024-may-music-player-uWu-ShruWu",
             "plink": "https://2024-may-sde-music-player-uwu-shruwu.dev.io-academy.uk/"
+        },
+        {
+            "name": "Bookswap Backend Api",
+            "img" : "",
+            "desc": "We built the back-end API for an bookswap app, using Laravel. It lists claimed and unclaimed books which can be further sorted. New books can be added and reviews can be added to them. The API was designed to follow REST principles.",
+            "github": "https://github.com/iO-Academy/2024-may-sde-komodo-kode-book-swap-api",
+            "plink": "#"
         }
     ]
 }
