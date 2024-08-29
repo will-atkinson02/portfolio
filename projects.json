@@ -16,10 +16,10 @@
         },
         {
             "name": "Bookswap Backend Api",
-            "img" : "",
-            "desc": "We built the back-end API for an bookswap app, using Laravel. It lists claimed and unclaimed books which can be further sorted. New books can be added and reviews can be added to them. The API was designed to follow REST principles.",
+            "img" : "bookswap-api.png",
+            "desc": "We built the back-end API for an bookswap app, using Laravel. It lists claimed and unclaimed books which can be further sorted by genre or searched by name. New books can be added and reviews can be added to them. The API was designed to follow REST principles.",
             "github": "https://github.com/iO-Academy/2024-may-sde-komodo-kode-book-swap-api",
-            "plink": "#"
+            "plink": "https://2024-may-bookswap-fe-komodo-kode.dev.io-academy.uk/"
         }
     ]
 }
