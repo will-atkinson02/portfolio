@@ -5,7 +5,24 @@ fetch("projects.json").then(function (res) {
 }).then(function (data){
     const section3 = document.querySelector(".section-3")
 
-    data.projects.forEach(function (project) {
+    data.projects.forEach(project => {
+        if (project.pinned) {
+            document.querySelector(".pinned-project-container").innerHTML += `
+                <div class="pinned-project">
+                    <div class="project-details">
+                        <h2>${project.name}</h2>
+                        <div class="project-description">${project.desc}</div>
+                    </div>
+                    <div class="project-image-and-links">
+                        <img class="pinned-project-image" src="${project.img}" alt=""/>
+                        <div class="project-links">
+                            <a href="${project.plink}">Live <i class="fa-solid fa-link"></i></a>
+                            <a href="${project.github}"> Github <i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                    </div>
+                </div>`
+        }
+
         section3.innerHTML += `
         <div class="projects-outer">
             <div class="project-container">

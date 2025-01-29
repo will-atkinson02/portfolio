@@ -206,20 +206,20 @@ input:checked + .slider:before {
 .section-1 {
     /* Positioning */
     height: 90vh;
+    width: 100vw;
 
     /* Display & Box Model */
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     border-top: 1px solid var(--white-textcolor); 
 
     /* Color */
-    background-color: var(--white-backgroundcolor);
-    color: var(--blue-colour2);
+    background-color: var(--blue-color3);
+    color: var(--white-backgroundcolor);
 
     /* Text */
     font-family: "Fira Sans", sans-serif;
-    text-align: center;
     
 }
 
@@ -308,6 +308,46 @@ h1 {
     /* Color */
     color: var(--black-arrow);
 } 
+
+.pinned-project-container {
+    /* Display */
+    display: grid;
+    grid-template-rows: 1fr 5fr 5fr 5fr;
+    justify-items: center;
+    width: 100%;
+
+    /* Colour */
+    background-color: white;
+}
+
+.pinned-projects-header {
+    /* Colour */
+    color: var(--blue-color1);
+}
+
+.pinned-project {
+    /* Display */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+
+    /* Colours */
+    background-color: var(--blue-color1);
+}
+
+.project-details {
+    padding: 0 5px 0 5px;
+}
+
+.project-description {
+
+}
+
+.pinned-project-image {
+    /* Display */
+    width: 50%;
+    height: 50%;
+}
 
 /* Section 2 - About */
 

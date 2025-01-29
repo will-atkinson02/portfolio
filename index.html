@@ -32,11 +32,10 @@
     <!--Header: Navbar-->
     <header>
         <h2 id="navbar-head"><span>My Portfolio</span> <i class="fa-solid fa-palette"></i></h2>
-        <a class="anchor-1" href="#section-2">About</a>
-        <a class="anchor-1" href="#section-3">Projects</a>
-        <a class="anchor-1" id="contact-border" href="#footer">Contact</a>
+        <a class="socials" href="https://www.linkedin.com/in/william-atkinson-7bb129283/" aria-label="LinkedIn">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+        <a class="socials" href="https://github.com/will-atkinson02" aria-label="GitHub">Github<i class="fa-brands fa-square-github"></i></a>
         <div class="theme-switch">
-            <p class="change-theme">Change Theme:</p>
+            <p class="change-theme">Theme:</p>
             <label class="switch">
                 <input id="toggleThemeButton" type="checkbox">
                 <span class="slider round"></span>
@@ -45,51 +44,40 @@
     </header>
     
     <!--Section 1: Welcome-->
-    <section class="section-1">
-        <h2 id="welcome-h2">Hello!</h2>
-        <h1>Welcome to my Portfolio...</h1>
-        <!-- Click message changes to scroll message when screen width is less than 967px -->
-        <div class="click-or-scroll">
-            <p class="click-pls">Click the arrow below to see more:</p>
-            <p class="scroll-pls">Scroll to see more...</p>
+    <div class="section-1">
+        <div class="about-container">
+            <h2 id="welcome-h2">Hello! Welcome to my Portfolio...</h2>
+            <div class="about-panel">
+                <div class="details">
+                    <h2 class="about-title">About me...</h2>
+                    <p class="about-para">I am a recent graduate from iO Academy’s 12 week software development bootcamp, looking to enter the industry. I really enjoy the creative process of coding and the problem solving that comes with it.
+                        In my spare time I like to play electric guitar and train at the gym. A goal of mine is to help develop
+                        technology solutions which make a real difference to people’s lives.</p>
+                </div>
+            </div>
+            <div class="click-or-scroll">
+                <p class="click-pls">Click the arrow below to see more:</p>
+                <p class="scroll-pls">Scroll to see more...</p>
+            </div>
+            <div class="arrow-1">
+                <a href="#section-2" aria-label="Next Section" ><i class="fa-solid fa-angles-down"></i></i></a>
+            </div>
         </div>
-        
-        <!-- Arrow to about section -->
-        <div class="arrow-1">
-            <a href="#section-2" aria-label="Next Section" ><i class="fa-solid fa-angles-down"></i></i></a>
+        <div class="pinned-project-container">
+            <h2 class="pinned-projects-header">Recent projects:</h2>
         </div>
-    </section>
+    </div>
     
-    <!--Section 2: About-->
-    <section id="section-2" class="section-2">
-        <!-- Background Image-->
-        <img id="code-background" src="https://images.pexels.com/photos/1921326/pexels-photo-1921326.jpeg" alt=""/>
-        <div class="about-panel">
-            <div class="details">
-                <h2 class="about-title">About me...</h2>
-                <p class="about-para">I am a recent graduate from iO Academy’s 12 week software development bootcamp, looking to enter the industry. I really enjoy the creative process of coding and the problem solving that comes with it.
-                    In my spare time I like to play electric guitar and train at the gym. A goal of mine is to help develop
-                    technology solutions which make a real difference to people’s lives.</p>
-            </div>
-            
-            <!-- Arrow to projects section -->
-            <div class="arrow-2">
-                <a href="#section-3" aria-label="Next Section"><i class="fa-solid fa-chevron-down"></i></a>
-            </div>
-        </div>
-        
-            
-    </section >
     
     <!--Section 3: Projects-->
-    <section id="section-3" class="section-3">
+    <div id="section-3" class="section-3">
         <div class="portfolio-title">
             <h2>Here are some of the projects I've worked on:</h2>
         </div>
 
         <!--Projects will appear here-->
 
-    </section>
+    </div>
 
     <!--Footer: Contact-->
     <footer id="footer" class="contact">
@@ -107,12 +95,7 @@
                 </div>
 
                 <!--Icon links-->
-                <div class="socials">
-                    <a class="link-spacing" href="https://www.linkedin.com/in/william-atkinson-7bb129283/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-
-                    <a class="link-spacing" href="https://github.com/will-atkinson02" aria-label="GitHub"><i class="fa-brands fa-square-github"></i></a>
-
-                </div>
+                
             </div>  
         </div> 
     </footer>
