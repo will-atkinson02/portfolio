@@ -33,60 +33,6 @@ fetch("projects.json").then(function (res) {
         `
     })
 
-
-    section3.innerHTML += `
-    <!-- Arrow to contact section -->
-    <div class="arrow-3">
-        <a class="arrow-to-contact" href="#footer" aria-label="Next Section"><i class="fa-solid fa-chevron-down"></i></a>
-    </div>
-    `
-
-    
-
-    // Hide arrow to contact section 
-
-    // #1 when arrow is clicked
-
-    const clickArrow = document.querySelector('.arrow-to-contact')
-
-    function hideArrow3() {
-        clickArrow.classList.add('hidden')
-        
-    }
-
-    clickArrow.addEventListener('click', hideArrow3)
-
-    // #2 when contact is clicked
-
-    const contactBtn = document.querySelector('#contact-border')
-
-    function hideArrow3() {
-        clickArrow.classList.add('hidden')
-        
-    }
-    contactBtn.addEventListener('click', hideArrow3)
-
-    // Show arrow on scroll
-
-    //const scroll = document.querySelector('.arrow-to-contact')
-    //const body = document.querySelector('.section-3')
-
-    //let hiddenCheck = clickArrow.classList.contains('hidden')
-    
-    let counter = 0
-
-    window.addEventListener("scroll", function () {
-        counter += 1
-        if (counter >= 50) {
-            clickArrow.classList.remove('hidden')
-            counter = 0
-        }
-            
-    })
-    
-
-    
-
     // Read more onclick
     
     const readMores = document.querySelectorAll('.read-more')
