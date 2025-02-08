@@ -42,9 +42,7 @@ for (let i = 0; i < nCols; i++) {
     hashMap[i][1] = bound2
 
     for (let j = bound1; j < bound2; j++) {
-        
-
-        animationContainer.querySelectorAll(".animation-column")[i].querySelectorAll(".block")[j].style.color = "black"
+        animationContainer.querySelectorAll(".animation-column")[i].querySelectorAll(".block")[j].style.color = "#0d499c"
     }
 }
 
@@ -61,7 +59,7 @@ function doThing() {
         }
         
         if (hashMap[i][0] < nRows) {
-            let colour = "rgb(31, 31, 94)"
+            let colour = "white"
             if (document.querySelector(".animation-column").classList.contains("dark")) {
                 colour = "greenyellow"
             }
@@ -70,7 +68,7 @@ function doThing() {
         }
     
         if (hashMap[i][1] < nRows) {
-            let colour = "white"
+            let colour = "#0d499c"
             if (document.querySelector(".animation-column").classList.contains("dark")) {
                 colour = "black"
             }
