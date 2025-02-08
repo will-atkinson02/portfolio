@@ -278,6 +278,8 @@ h1 {
 }
 
 .ascii-animation-container {
+    display: flex;
+    justify-content: center;
     height: 100%;
     width: 100%;
     background-color: white;
@@ -654,6 +656,10 @@ h1 {
     .about-panel {
         border-radius: 0;
     }
+    
+    .ascii-animation-container {
+        margin-top: 5vh;
+    }
 
     .arrow-1 {
         display: none;
@@ -669,6 +675,7 @@ h1 {
         background-color: var(--white-backgroundcolor);
         font-family: "Fira Sans", sans-serif;
         gap: 35px;
+        margin-top: 12vh;
     }
 
     .portfolio-title {
