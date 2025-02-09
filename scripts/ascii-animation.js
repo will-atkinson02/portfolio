@@ -42,7 +42,7 @@ for (let i = 0; i < nCols; i++) {
     hashMap[i][1] = bound2
 
     for (let j = bound1; j < bound2; j++) {
-        animationContainer.querySelectorAll(".animation-column")[i].querySelectorAll(".block")[j].style.color = "blackrgb(29, 29, 29)"
+        animationContainer.querySelectorAll(".animation-column")[i].querySelectorAll(".block")[j].style.color = "rgb(20, 20, 20)"
     }
 }
 
@@ -64,7 +64,7 @@ function doThing() {
         }
     
         if (hashMap[i][1] < nRows) {
-            animationContainer.querySelectorAll(".animation-column")[i].querySelectorAll(".block")[hashMap[i][1]].style.color = "rgb(29, 29, 29)"
+            animationContainer.querySelectorAll(".animation-column")[i].querySelectorAll(".block")[hashMap[i][1]].style.color = "rgb(20, 20, 20)"
             hashMap[i][1]++
         }
     }

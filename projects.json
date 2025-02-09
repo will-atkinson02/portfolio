@@ -1,22 +1,51 @@
 {
     "projects": [
+		{
+            "name": "Java Space Invaders Game",
+            "img": "../images/space-invaders.png",
+            "desc": "The classic Space Invaders game coded in Java. I made the tile and gameover overlays using JPanels from Swing. I imported custom fonts, sounds and images using awt. I utilised OOP principles such as inheritance for entities and used a singleton class for my gamestate.",
+            "github": "https://github.com/will-atkinson02/SpaceInvaders",
+            "download": "https://drive.google.com/uc?export=download&id=1xTCHygflV8GMvrfuYAEkLah05rWTjjG2"
+        },
+        {
+            "name": "Taskboard App Frontend",
+            "img": "images/taskboard.png",
+            "desc": "I made a full-stack taskboard application. For the front-end I used JS, HTML and CSS. I developed my own drag and drop system using the vanilla JS drag and drop API. For the back-end I made a REST API using Laravel. It handles, logins, registrations, taskboard data and more. I mplemented the login system using sessions to store tokens.",
+            "frontendGithub": "https://github.com/will-atkinson02/taskboards",
+            "backendGithub": "https://github.com/will-atkinson02/taskboardsAPI",
+            "plink": "https://2024-williama.dev.io-academy.uk/taskboard-frontend/"
+        },
+        {
+            "name": "Taskboard App API",
+            "img": "images/taskboard.png",
+            "desc": "I made a full-stack taskboard application. For the back-end I made a REST API using Laravel. It handles, logins, registrations, taskboard data and more. I mplemented the login system using sessions to store tokens.",
+            "github": "https://github.com/will-atkinson02/taskboardsAPI",
+            "plink": "https://2024-williama.dev.io-academy.uk/taskboards"
+        },
+        {
+            "name": "Calculator App",
+            "img": "images/calculator.png",
+            "desc": "I built a calculator app using HTML CSS and JavaScript. It is capable of adding, subtracting, multiplying, dividing and can work with decimals too. It also allows the user to switch between three different colour schemes.",
+            "github": "https://2024-williama.dev.io-academy.uk/calculator-app/",
+            "plink": "https://2024-may-sde-invoicing-sloth-rockets.dev.io-academy.uk/"
+        },
         {
             "name": "Invoice Tracker Frontend",
-            "img" : "invoice-tracker.png",
-            "desc": "We built the back-end for a music player program, using object-oriented PHP and a MySQL database, and then displayed different pieces of information such as favourite songs or most listened to albums. I worked on making sure the Artist page displayed each Album and its respective songs.",
+            "img": "images/invoice-tracker.png",
+            "desc": "We built the front-end for an invoice web app, using React. It fetched data from an RESTful API and displayed clients and their invoices along with their payment status. I worked on the new invoice page which required sending POST requests to the API.",
             "github": "https://github.com/iO-Academy/2024-may-invoicing-sloth-rockets",
             "plink": "https://2024-may-sde-invoicing-sloth-rockets.dev.io-academy.uk/"
         },
         {
             "name": "Music Player Backend",
-            "img" : "music-player.png",
-            "desc": "We built the front-end for an invoice web app, using React. It fetched data from an RESTful API and displayed clients and their invoices along with their payment status. I worked on the new invoice page which required sending POST requests to the API.",
+            "img": "images/music-player.png",
+            "desc": "We built the back-end for a music player program, using object-oriented PHP and a MySQL database, and then displayed different pieces of information such as favourite songs or most listened to albums. I worked on making sure the Artist page displayed each Album and its respective songs.",
             "github": "https://github.com/iO-Academy/2024-may-music-player-uWu-ShruWu",
             "plink": "https://2024-may-sde-music-player-uwu-shruwu.dev.io-academy.uk/"
         },
         {
             "name": "Bookswap Backend Api",
-            "img" : "bookswap-api.png",
+            "img": "images/bookswap-api.png",
             "desc": "We built the back-end API for an bookswap app, using Laravel. It lists claimed and unclaimed books which can be further sorted by genre or searched by name. New books can be added and reviews can be added to them. The API was designed to follow REST principles.",
             "github": "https://github.com/iO-Academy/2024-may-sde-komodo-kode-book-swap-api",
             "plink": "https://2024-may-bookswap-fe-komodo-kode.dev.io-academy.uk/"

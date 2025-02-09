@@ -3,10 +3,9 @@
 fetch("projects.json").then(function (res) {
     return res.json()
 }).then(function (data){
-    const section3 = document.querySelector(".section-3")
-
+    const section2 = document.querySelector(".section-2")
     data.projects.forEach(function (project) {
-        section3.innerHTML += `
+        section2.innerHTML += `
         <div class="projects-outer">
             <div class="project-container">
                 <div class="project-info">
@@ -20,23 +19,27 @@ fetch("projects.json").then(function (res) {
                     </div>
                 </div>
                 <div class="project-links">
-                    <a href="${project.plink}">Live <i class="fa-solid fa-link"></i></a>
-                    <a href="${project.github}"> Github <i class="fa-brands fa-square-github"></i></a>
+                    ${project.plink ? `<a href="${project.plink}">Live <i class="fa-solid fa-link"></i></a>` : ''}
+                    ${project.frontendGithub && project.backendGithub ? `
+                        <a href="${project.frontendGithub}">Frontend <i class="fa-brands fa-square-github"></i></a>
+                        <a href="${project.backendGithub}">Backend <i class="fa-brands fa-square-github"></i></a>` 
+                        : project.github ? `<a href="${project.github}">Github <i class="fa-brands fa-square-github"></i></a>` 
+                        : ''
+                    }
+                    ${project.download ? `<a href="${project.download}">Download <i class="fa-solid fa-download"></i></a>` : ''}
                 </div>
             </div>
-            <div>
-            </div>
-            <div class="image-container">
-                <img class="project-image" src="${project.img}" alt=""/>
-            </div>
+        <div>
+        </div>
+        <div class="image-container">
+            <img class="project-image" src="${project.img}" alt=""/>
+        </div>
         </div>
         `
     })
 
     // Read more onclick
-    
     const readMores = document.querySelectorAll('.read-more')
-    
     readMores.forEach(function (readMore) {
         readMore.addEventListener('click', function () {
             const container = readMore.closest('.read-more-container')
@@ -49,17 +52,11 @@ fetch("projects.json").then(function (res) {
             } else {
                 readMore.innerHTML = `Read more <i class="fa-solid fa-chevron-down"></i>`;
             }
-            
         })
     })
-
-    
-
-    
 })
 
 const toggleThemeButton = document.getElementById('toggleThemeButton')
-
 toggleThemeButton.addEventListener('click', () => {
     document.body.classList.toggle('dark')
 
@@ -68,19 +65,16 @@ toggleThemeButton.addEventListener('click', () => {
     document.querySelector('h2').classList.toggle('dark')
     document.querySelectorAll('.anchor-1').forEach(el=>el.classList.toggle('dark'))
     document.querySelector('.change-theme').classList.toggle('dark')
-    // document.querySelector('#contact-border').classList.toggle('dark')
-
 
     // Section 1
     document.querySelector('.section-1').classList.toggle('dark')
     document.querySelector('h1').classList.toggle('dark')
     document.querySelector('.animation-column').classList.toggle('dark')
-
-    // Section 2
     document.querySelector('.about-panel').classList.toggle('dark')
 
     // Section 3
-    document.querySelector('.section-3').classList.toggle('dark')
+    document.querySelector('.section-2').classList.toggle('dark')
+    document.querySelector('.portfolio-title').classList.toggle('dark')
 
     // Footer
     document.querySelector('footer').classList.toggle('dark')
