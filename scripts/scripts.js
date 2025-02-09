@@ -73,8 +73,8 @@ toggleThemeButton.addEventListener('click', () => {
 
     // Section 1
     document.querySelector('.section-1').classList.toggle('dark')
-    document.querySelector('#welcome-h2').classList.toggle('dark')
     document.querySelector('h1').classList.toggle('dark')
+    document.querySelector('.animation-column').classList.toggle('dark')
 
     // Section 2
     document.querySelector('.about-panel').classList.toggle('dark')
@@ -86,5 +86,4 @@ toggleThemeButton.addEventListener('click', () => {
     document.querySelector('footer').classList.toggle('dark')
     document.querySelector('.div-pad').classList.toggle('dark')
     document.querySelector('.div-pad p').classList.toggle('dark')
-    document.querySelector('.click-or-scroll').classList.toggle('dark')
 })
