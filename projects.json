@@ -2,25 +2,18 @@
     "projects": [
 		{
             "name": "Java Space Invaders Game",
-            "img": "../images/space-invaders.png",
+            "img": "images/space-invaders.png",
             "desc": "The classic Space Invaders game coded in Java. I made the tile and gameover overlays using JPanels from Swing. I imported custom fonts, sounds and images using awt. I utilised OOP principles such as inheritance for entities and used a singleton class for my gamestate.",
             "github": "https://github.com/will-atkinson02/SpaceInvaders",
-            "download": "https://drive.google.com/uc?export=download&id=1xTCHygflV8GMvrfuYAEkLah05rWTjjG2"
+            "download": "https://drive.google.com/uc?export=download&id=1zPwUhrU8ErDTySASmr28L9YGEY8LX06I"
         },
         {
-            "name": "Taskboard App Frontend",
+            "name": "Taskboard App",
             "img": "images/taskboard.png",
-            "desc": "I made a full-stack taskboard application. For the front-end I used JS, HTML and CSS. I developed my own drag and drop system using the vanilla JS drag and drop API. For the back-end I made a REST API using Laravel. It handles, logins, registrations, taskboard data and more. I mplemented the login system using sessions to store tokens.",
+            "desc": "I made a full-stack taskboard application. For the front-end I used JS, HTML and CSS. I developed my own drag and drop system using vanilla JS drag and drop. For the back-end I made a REST API using Laravel. It handles, logins, registrations, taskboard data and more. I implemented the login system using sessions to store tokens.",
             "frontendGithub": "https://github.com/will-atkinson02/taskboards",
             "backendGithub": "https://github.com/will-atkinson02/taskboardsAPI",
             "plink": "https://2024-williama.dev.io-academy.uk/taskboard-frontend/"
-        },
-        {
-            "name": "Taskboard App API",
-            "img": "images/taskboard.png",
-            "desc": "I made a full-stack taskboard application. For the back-end I made a REST API using Laravel. It handles, logins, registrations, taskboard data and more. I mplemented the login system using sessions to store tokens.",
-            "github": "https://github.com/will-atkinson02/taskboardsAPI",
-            "plink": "https://2024-williama.dev.io-academy.uk/taskboards"
         },
         {
             "name": "Calculator App",
