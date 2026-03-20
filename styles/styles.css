@@ -216,6 +216,10 @@ h1 {
     font-size: 22px;
 }
 
+.about-div {
+    padding-top: 10px;
+}
+
 .arrow-1 {
     /* Display */
     margin-top: 3vh;
