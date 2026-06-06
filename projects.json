@@ -11,16 +11,16 @@
             "name": "Taskboard App",
             "img": "images/taskboard.png",
             "desc": "I made a full-stack taskboard application. For the front-end I used JS, HTML and CSS. I developed my own drag and drop system using vanilla JS drag and drop. For the back-end I made a REST API using Laravel. It handles, logins, registrations, taskboard data and more. I implemented the login system using sessions to store tokens.",
-            "frontendGithub": "https://github.com/will-atkinson02/taskboards",
+            "frontendGithub": "https://github.com/will-atkinson02/taskboard-frontend",
             "backendGithub": "https://github.com/will-atkinson02/taskboardsAPI",
-            "plink": "https://2024-williama.dev.io-academy.uk/taskboard-frontend/"
+            "plink": "https://will-atkinson02.github.io/taskboard-frontend/"
         },
         {
             "name": "Calculator App",
             "img": "images/calculator.png",
             "desc": "I built a calculator app using HTML CSS and JavaScript. It is capable of adding, subtracting, multiplying, dividing and can work with decimals too. It also allows the user to switch between three different colour schemes.",
-            "github": "https://2024-williama.dev.io-academy.uk/calculator-app/",
-            "plink": "https://2024-may-sde-invoicing-sloth-rockets.dev.io-academy.uk/"
+            "github": "https://will-atkinson02.github.io/calculator-app/",
+            "plink": "https://github.com/will-atkinson02/calculator-app"
         },
         {
             "name": "Invoice Tracker Frontend",
