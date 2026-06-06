@@ -19,8 +19,8 @@
             "name": "Calculator App",
             "img": "images/calculator.png",
             "desc": "I built a calculator app using HTML CSS and JavaScript. It is capable of adding, subtracting, multiplying, dividing and can work with decimals too. It also allows the user to switch between three different colour schemes.",
-            "github": "https://will-atkinson02.github.io/calculator-app/",
-            "plink": "https://github.com/will-atkinson02/calculator-app"
+            "github": "https://github.com/will-atkinson02/calculator-app",
+            "plink": "https://will-atkinson02.github.io/calculator-app/"
         },
         {
             "name": "Invoice Tracker Frontend",
